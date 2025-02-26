@@ -24,5 +24,4 @@ test.describe('Account Page', () => {
         await expect(page.locator('form[class*="login"]')).toBeVisible();
         await expect(page.locator('form[class*="register"]')).toBeVisible();
     });
-})
-
+});
