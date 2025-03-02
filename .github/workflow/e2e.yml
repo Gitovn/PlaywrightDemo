@@ -1,9 +1,11 @@
 name: "e2e"
 on: [push]
+env: 
+CI: false
 jobs:
   test-e2e:
     name: Run E2E tests
-    runs-on: macOS Sonoma
+    runs-on: ubantu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v2
